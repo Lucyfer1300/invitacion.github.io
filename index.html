@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invitación a la Fiesta de Terror</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+
+  <body>
+
+    <div class="background-image"></div>
+    <div class="container">
+      <h1>Bienvenido a la Fiesta de Terror</h1>
+     
+        <p>
+          ¡Prepárate para una noche llena de sustos y diversión!
+          ¡Prepárate para una noche llena de sustos y diversión!
+          ¡Prepárate para una noche llena de sustos y diversión!
+          ¡Prepárate para una noche llena de sustos y diversión!
+          ¡Prepárate para una noche llena de sustos y diversión!
+        </p>
+      
+     <br>
+      <br>
+      <!-- Gif de terror (reemplaza 'ruta-a-tu-gif' por la ruta a tu gif) -->
+      <img src="img/15.jpg" alt="Gif de terror" />
+      <br>
+      <br>
+      <p class="blink">¡No te lo pierdas!</p>
+      <br>
+      <p class="blink">¡Ubicacion!</p>
+
+      <!-- Mapa de Google Maps -->
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!3m2!1ses-419!2smx!4v1693714874715!5m2!1ses-419!2smx!6m8!1m7!1suH32nK5i-h0yOhT_DVMWyA!2m2!1d25.57964018473204!2d-100.2375552434178!3f17.063853310278276!4f-6.339746107027835!5f0.7820865974627469" 
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+      <br>
+      <div class="whatsapp">
+        <h2>Responde en WhatsApp</h2>
+    <h3>Selecciona una respuesta:</h3>
+    <button onclick="enviarRespuesta('Si')">Asisto!</button>
+    <button onclick="enviarRespuesta('No puedo sera en otro momento')">No puedo!</button>
+      </div>
+      <br>
+      <footer>
+        <p>M.E.M.V</p>
+      </footer>
+    </div>
+
+    <script>
+      function enviarRespuesta(mensaje) {
+          var numeroWhatsApp = '3171202013';
+          var mensajeWhatsApp = encodeURIComponent(mensaje);
+          var urlWhatsApp = 'https://wa.me/' + numeroWhatsApp + '?text=' + mensajeWhatsApp;
+
+          window.location.href = urlWhatsApp;
+      }
+  </script>
+  </body>
+</html>
